@@ -69,6 +69,11 @@ options:
               - List of strings containing the IPv4 addresses, IPv6 addresses, IPv4 CIDRs,
                 and/or IPv6 CIDRs to which the firewall will allow traffic
             required: false
+            suboptions:
+              elements:
+                description:
+                  - IPv4 or IPv6 address in CIDR notation.
+                type: str
           droplet_ids:
             description:
               - List of integers containing the IDs of the Droplets to which the firewall will allow traffic
